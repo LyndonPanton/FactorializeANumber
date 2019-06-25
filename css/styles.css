@@ -39,3 +39,28 @@ footer {
 	background-color: indianred;
 	font-size: 1.3em;
 }
+
+.more-link {
+	color: black;
+}
+
+.more-link:active {
+	color: cyan !important;
+}
+
+.more-link:focus {
+	color: lime;
+}
+
+.more-link:hover {
+	color: yellow;
+}
+
+#more {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	padding-top: 1vh;
+	font-size: 1.5em;
+}
