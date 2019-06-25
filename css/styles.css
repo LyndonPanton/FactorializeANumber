@@ -31,3 +31,11 @@ header {
 
 
 /* FOOTER */
+footer {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	padding: 1.5vh 0;
+	background-color: indianred;
+	font-size: 1.3em;
+}
