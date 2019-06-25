@@ -4,17 +4,20 @@ window.onload = function() {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function factorialize(number) {
-		let factorial = 0;
+		let factorial = 1;
 
 		if (isNaN(number)) {
 			return "NaN";
-		} else if ((Number(number)) < 1) {
+		} else if ((Number(number)) < 0) {
 			return "Number must be more than 0";
 		} else if (Number(number) % 1 !== 0 || number.indexOf("e") !== -1) {
 			return "Number must be an integer";
 		} else {
-			console.log(4);
-			
+			for (let i = 1; i <= number; i++) {
+				factorial = factorial * i;
+			}
+
+			return factorial;
 		}
 	}
 
