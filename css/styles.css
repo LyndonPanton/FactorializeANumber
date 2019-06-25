@@ -27,7 +27,24 @@ header {
 
 
 /* MAIN */
+main {
+	padding-top: 30vh;
+	font-size: 2em;
+}
 
+#number {
+	border: none;
+	border-bottom: 1px black solid;
+	background-color: transparent;
+	font-size: 1em;
+	color: white;
+}
+
+#number::placeholder {
+	opacity: 0.5;
+	font-style: italic;
+	color: white;
+}
 
 
 /* FOOTER */
