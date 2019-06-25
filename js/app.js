@@ -25,6 +25,10 @@ window.onload = function() {
 			result = factorial;
 		}
 
+		if (result === Infinity) {
+			result = "Very Big";
+		}
+		
 		display(result);
 	}
 
