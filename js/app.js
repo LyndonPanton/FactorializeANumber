@@ -3,22 +3,29 @@
 window.onload = function() {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
+	function display(result) {
+		document.getElementById("result").textContent = result;
+	}
+
 	function factorialize(number) {
 		let factorial = 1;
+		let result;
 
 		if (isNaN(number)) {
-			return "NaN";
+			result = "NaN";
 		} else if ((Number(number)) < 0) {
-			return "Number must be more than 0";
+			result = "Number must be more than 0";
 		} else if (Number(number) % 1 !== 0 || number.indexOf("e") !== -1) {
-			return "Number must be an integer";
+			result = "Number must be an integer";
 		} else {
 			for (let i = 1; i <= number; i++) {
 				factorial = factorial * i;
 			}
 
-			return factorial;
+			result = factorial;
 		}
+
+		display(result);
 	}
 
 	let input = document.getElementById("number");
